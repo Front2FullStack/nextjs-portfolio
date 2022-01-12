@@ -4,6 +4,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'monton': ['Monoton', 'cursive',],
+    },
     extend: {},
   },
   plugins: [],
