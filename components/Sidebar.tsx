@@ -47,7 +47,7 @@ export const Sidebar = () => {
                     <p>+971-543885308</p>
                     {/* email button */}
                     <div className="flex-col items-center justify-center">
-                        <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-500" >Email Me</button>
+                        <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-500" onClick={()=> window.open('mailto:sushilparajuli2010@gmail.com')} >Email Me</button>
                         <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-500" >Toggle Theme</button>
                     </div>
                 </div>
