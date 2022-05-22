@@ -5,7 +5,6 @@ import ServiceCard from '../components/ServiceCard';
 
 
 const Home = () => {
-  console.log('Client Side with Props',services);
   return (
     <section className='flex flex-col px-6 pt-1'>
       {/* <Head>
@@ -18,7 +17,7 @@ const Home = () => {
         <h6 className='my-3 text-xl font-bold'>What I Offer ?</h6>
         <div className='grid gap-6 lg:grid-cols-2'>
           {services.map(service => ( 
-            <div key={service.title} className='bg-gray-200 rounded-lg lg:col-span-1'>
+            <div key={service.title} className='bg-gray-200 rounded-lg lg:col-span-1 dark:bg-black '>
             <ServiceCard key={service.title} service={service}/> 
             </div>
           ))}
