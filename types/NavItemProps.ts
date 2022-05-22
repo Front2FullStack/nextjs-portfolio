@@ -1,6 +1,6 @@
 import { IconType } from "react-icons/lib";
 
-export interface NavItemProps {
+export default interface NavItemProps {
     activeItem: string,
     setActiveItem: Function,
     name: string,

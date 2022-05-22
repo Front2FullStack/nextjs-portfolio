@@ -11,9 +11,8 @@ export const Sidebar = () => {
                 alt="user avatar" 
                 className="w-32 h-32 mx-auto rounded-full"
                 />
-                <h3 className="my-4 text-3xl font-medium tracking-wider font-monton">
-                    <span>Sushil</span> 
-                    Parajuli
+                <h3 className="my-4 text-3xl font-medium tracking-wider text-transparent whitespace-pre-line font-monton bg-clip-text bg-gradient-to-r from-blue-700 to-blue-900">
+                    Sushil Parajuli
                 </h3>
                 <p 
                     className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full"

@@ -3,14 +3,14 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 import {services} from '../../data'
 
-import { IService } from "../../types/Services";
+import IService from "../../types/Services";
 
 
-export default function handler(
+export default (
   req: NextApiRequest,
-  res: NextApiResponse<IService[]>
-) {
-  
+  res: NextApiResponse
+) => {
+
   // Backend data fetching logic goes here
-  res.status(200).json(services)
+  res.status(200).json({services})
 }
