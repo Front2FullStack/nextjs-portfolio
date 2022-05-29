@@ -24,7 +24,7 @@ const Projects = () => {
 
   return (
     <div className="px-5 py-2">
-      <ProjectsNavbar handleFilterCategory={handleFilterCategory} />
+      <ProjectsNavbar handleFilterCategory={handleFilterCategory} active={active} />
       <div className="relative grid grid-cols-12 gap-4 my-3 pl-4">
         {projects.map((project) => (
           <div

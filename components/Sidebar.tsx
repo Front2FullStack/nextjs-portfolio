@@ -6,18 +6,20 @@ import {
   AiFillTwitterSquare,
 } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
-
+import Image from 'next/image'
 export const Sidebar = () => {
   const { theme, setTheme } = useTheme();
   const changeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (
-    <div>
-      <img
+    <div className="text-center">
+      <Image
         src="https://avatars.githubusercontent.com/u/5800371?v=4"
         alt="user avatar"
-        className="w-32 h-32 mx-auto rounded-full"
+        className="mx-auto rounded-full"
+        height="128"
+        width="128"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider text-transparent whitespace-pre-line font-monton bg-clip-text bg-gradient-to-r from-blue-700 to-blue-900">
         Sushil Parajuli
@@ -47,7 +49,7 @@ export const Sidebar = () => {
         </a>
       </div>
       {/* {address} */}
-      <div>
+      <div className="text-center">
         <div>
           <span>Dubai, UAE</span>
         </div>
