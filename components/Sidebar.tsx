@@ -22,6 +22,9 @@ export const Sidebar = () => {
       <h3 className="my-4 text-3xl font-medium tracking-wider text-transparent whitespace-pre-line font-monton bg-clip-text bg-gradient-to-r from-blue-700 to-blue-900">
         Sushil Parajuli
       </h3>
+      <h3 className="my-4 text-3xl font-medium tracking-wider whitespace-pre-line">
+      सुशील पराजुली
+      </h3>
       <p className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-black dark:border-white dark:border">
         FullStack Developer
       </p>
@@ -32,7 +35,7 @@ export const Sidebar = () => {
         <GiTie className="w-6 h-6" /> Download Resume
       </a>
       {/* {social icons} */}
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-green-400 md:w-full">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-green-400 dark:text-white md:w-full">
         <a href="">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>

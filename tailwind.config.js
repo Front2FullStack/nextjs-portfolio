@@ -6,7 +6,8 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      'monton': ['Monoton', 'cursive',],
+      'monton': ['Monoton', 'cursive'],
+      'notosans': ['Noto Sans Devanagari', 'sans-serif'],
     },
     extend: {},
   },

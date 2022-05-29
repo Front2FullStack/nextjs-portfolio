@@ -5,6 +5,7 @@ import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import {BsCircleFill} from 'react-icons/bs'
 import { MdDeveloperMode } from "react-icons/md";
 import { ISkill } from "./types/Skills";
+import { IProject, Category } from "./types/Projects";
 
 export const services: IService[] = [
     {
@@ -100,5 +101,35 @@ export const tools: ISkill[] = [
     name: 'Framer',
     level: '50%',
     Icon: BsCircleFill
+  }
+]
+
+export const projects:IProject[] = [
+  {
+    name: 'React Blog (MERN-STACK)',
+    description: 'Complete Blog site with server-client authentication developed on MERN STACK',
+    image_url: '/images/projects/mern.png',
+    demo_url : '',
+    github_url: 'https://github.com/sushilparajuli/MERN-Stack-Blog',
+    categories : ["reactjs", "nodejs", "express", "mongo"],
+    stack : ['ReactJS', 'NodeJS', 'MongoDB']
+  },
+  {
+    name: 'Social Next App',
+    description: 'Social Networking web application with NextJS/NodeJS',
+    image_url: '/images/projects/node_next.jpeg',
+    demo_url : '',
+    github_url: 'https://github.com/sushilparajuli/social-next',
+    categories : ["reactjs", "nodejs","express", "mongo"],
+    stack : ['ReactJS', 'NodeJS', 'MongoDB', 'NextJS']
+  },
+  {
+    name: 'Jumia Deals',
+    description: 'Free classified in Africa',
+    image_url: '/images/projects/jdeals.png',
+    demo_url : 'https://deals.jumia.ci/',
+    github_url: '',
+    categories : ["vuejs", "nodejs","php"],
+    stack : ['VueJS', 'NodeJS', 'Mysql', 'Php']
   }
 ]
