@@ -10,4 +10,4 @@ export interface IProject {
   stack: string[];
 }
 
-export type Category = 'reactjs' | 'vuejs' | 'golang' | 'nodejs' | 'express' | 'mongo' | 'php'
+export type Category = 'reactjs' | 'vuejs' | 'golang' | 'nodejs' | 'express' | 'mongo' | 'php' | 'mysql'

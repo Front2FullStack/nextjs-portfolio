@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import Bar from "../components/Bar";
 import { languages, tools } from "../data";
-
+import { fadeInUp } from "./animations";
 const resume = () => {
   return (
     <section className="p-4">
@@ -9,7 +10,11 @@ const resume = () => {
           <h5 className="my-3 text-2xl font-bold">Experiences</h5>
         </header>
         <div className="grid gap-6 md:grid-cols-2">
-          <article>
+          <motion.article
+            variants={fadeInUp}
+            initial="initial"
+            animate="animate"
+          >
             <article>
               <h5 className="my-2 text-xl font-bold">Sr Front-End Developer</h5>
               <p className="font-semibold">
@@ -29,8 +34,12 @@ const resume = () => {
                 front-end code
               </p>
             </article>
-          </article>
-          <article>
+          </motion.article>
+          <motion.article
+            variants={fadeInUp}
+            initial="initial"
+            animate="animate"
+          >
             <article>
               <h5 className="my-2 text-xl font-bold">
                 Front-End UI/UX Developer
@@ -53,20 +62,22 @@ const resume = () => {
                 front-end code
               </p>
             </article>
-          </article>
+          </motion.article>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
           <article className="my-2">
             <header>
-                <h5 className="my-3 text-2xl font-bold">Languages & Frameworks</h5>
+              <h5 className="my-3 text-2xl font-bold">
+                Languages & Frameworks
+              </h5>
             </header>
             {languages.map((language) => (
-            <Bar data={language} key={language.name} />
+              <Bar data={language} key={language.name} />
             ))}
           </article>
           <article>
             <header>
-                <h5 className="my-3 text-2xl font-bold">Tools & Softwares</h5>
+              <h5 className="my-3 text-2xl font-bold">Tools & Softwares</h5>
             </header>
             {tools.map((tool) => (
               <Bar data={tool} key={tool.name} />

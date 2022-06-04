@@ -21,7 +21,7 @@ export const Sidebar = () => {
         height="128"
         width="128"
       />
-      <h3 className="my-4 text-3xl font-medium tracking-wider text-transparent whitespace-pre-line font-monton bg-clip-text bg-gradient-to-r from-blue-700 to-blue-900">
+      <h3 className="my-4 text-3xl font-medium tracking-wider text-transparent whitespace-pre-line font-monton bg-clip-text bg-gradient-to-r from-blue-700 to-blue-900 dark:from-white dark:to-yellow-100">
         Sushil Parajuli
       </h3>
       <h3 className="my-4 text-3xl font-medium tracking-wider whitespace-pre-line">
