@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Bar from "../components/Bar";
 import { languages, tools } from "../data";
-import { fadeInUp } from "./animations";
+import { fadeInUp } from "../animations";
 const resume = () => {
   return (
     <section className="p-4">

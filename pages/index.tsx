@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
-import { fadeInUp, routeAnimation, stagger } from "./animations";
+import { fadeInUp, routeAnimation, stagger } from "../animations";
 
 const Home = () => {
   return (

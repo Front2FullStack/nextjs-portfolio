@@ -103,6 +103,7 @@ export const tools: ISkill[] = [
 
 export const projects: IProject[] = [
   {
+    id: 1,
     name: "React Blog (MERN-STACK)",
     description:
       "Complete Blog site with server-client authentication developed on MERN STACK",
@@ -113,6 +114,7 @@ export const projects: IProject[] = [
     stack: ["ReactJS", "NodeJS", "MongoDB"],
   },
   {
+    id: 2,
     name: "Social Next App",
     description: "Social Networking web application with NextJS/NodeJS",
     image_url: "/images/projects/node_next.jpeg",
@@ -122,6 +124,7 @@ export const projects: IProject[] = [
     stack: ["ReactJS", "NodeJS", "MongoDB", "NextJS"],
   },
   {
+    id: 3,
     name: "Jumia Deals",
     description: "Free classified in Africa",
     image_url: "/images/projects/jdeals.png",
@@ -131,6 +134,7 @@ export const projects: IProject[] = [
     stack: ["VueJS", "NodeJS", "Mysql", "Php"],
   },
   {
+    id: 4,
     name: "NextJS App with faker",
     description: "Next.JS Checkout App with fake data",
     image_url: "/images/projects/image_not_available.png",

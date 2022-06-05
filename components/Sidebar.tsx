@@ -6,7 +6,7 @@ import {
   AiFillTwitterSquare,
 } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
-import Image from 'next/image'
+import Image from "next/image";
 export const Sidebar = () => {
   const { theme, setTheme } = useTheme();
   const changeTheme = () => {
@@ -25,26 +25,44 @@ export const Sidebar = () => {
         Sushil Parajuli
       </h3>
       <h3 className="my-4 text-3xl font-medium tracking-wider whitespace-pre-line">
-      सुशील पराजुली
+        सुशील पराजुली
       </h3>
-      <p className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-black dark:border-white dark:border">
-        FullStack Developer
+      <p className="flex items-center justify-center px-2 py-1 my-3 font-bold border-2 border-green-200 dark:bg-black dark:border-white dark:border">
+        FullStack Web/Mobile Developer
       </p>
       <a
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-black dark:border-white dark:border"
-        href="#"
+        target="_blank"
+        rel="noreferrer"
+        href="/docs/resume.pdf"
+        download="resume"
       >
         <GiTie className="w-6 h-6" /> Download Resume
       </a>
       {/* {social icons} */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green-400 dark:text-white md:w-full">
-        <a href="">
+        <a
+          title="Github"
+          rel="noreferrer"
+          target="_blank"
+          href="https://github.com/sushilparajuli"
+        >
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="">
+        <a
+           title="Linkedin"
+          rel="noreferrer"
+          target="_blank"
+          href="https://www.linkedin.com/in/sushil-parajuli/"
+        >
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="">
+        <a
+          title="Twitter"
+          rel="noreferrer"
+          target="_blank"
+          href="https://twitter.com/imsushilp"
+        >
           <AiFillTwitterSquare className="w-8 h-8 cursor-pointer" />
         </a>
       </div>

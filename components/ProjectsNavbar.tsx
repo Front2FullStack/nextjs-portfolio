@@ -6,9 +6,8 @@ export const NavItem: FunctionComponent<{
   handleFilterCategory: Function;
   active: string
 }> = ({ value, handleFilterCategory, active }) => {
-    let className = "cursor-pointer hover:text-blue-800 capitalize"
+    let className = "capitalize cursor-pointer hover:text-blue-800"
     if(active === value){
-        console.log('I am here',value, active)
         className += " text-green-400"
     }
   return (
@@ -25,7 +24,7 @@ const ProjectsNavbar: FunctionComponent<{ handleFilterCategory: Function, active
   props
 ) => {
   return (
-    <div className="flex space-x-3 px-3 py-2 list-none overflow-x-auto">
+    <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
       <NavItem value="all" {...props} />
       <NavItem value="reactjs" {...props} />
       <NavItem value="vuejs" {...props} />

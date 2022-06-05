@@ -4,3 +4,7 @@
 /* body {
     background-color: #4a969e;
 } */
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right bottom,#4ade80,#3b82f6);
+}
