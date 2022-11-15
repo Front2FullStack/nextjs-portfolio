@@ -2,7 +2,7 @@ import IService from "./types/Services";
 import { RiComputerLine } from "react-icons/ri";
 import { FaBalanceScaleRight, FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
-import { BsCircleFill } from "react-icons/bs";
+import { BsCircleFill, BsCloud, BsCode, BsTools } from "react-icons/bs";
 import { MdDeveloperMode } from "react-icons/md";
 import { ISkill } from "./types/Skills";
 import { IProject, Category } from "./types/Projects";
@@ -18,19 +18,19 @@ export const services: IService[] = [
     Icon: FaServer,
     title: "Backend Development",
     details:
-      "Handle database, server, api using <b>Express </b>, <b>GoLang</b>, <b>PHP</b>",
+      "Handling database, server, api using <b>Express </b>, <b>GoLang</b>, <b>PHP</b>",
   },
   {
     Icon: AiOutlineApi,
     title: "API Development",
     details:
-      "Develop REST API using <b>Golang</b> & <b>Node API</b> using Microservices architecture ",
+      "Developing REST API using <b>Golang</b> & <b>Node API</b> for Microservices architecture ",
   },
   {
     Icon: AiOutlineAntDesign,
     title: "UI/UX Development",
     details:
-      "Stunning user interface designer using <b>Figma</b>, <b>Adobe XD</b>, <b>Sketch</b> along with motion designs",
+      "Stunning user interface development using <b>Figma</b>, <b>Adobe XD</b>, <b>Sketch</b> along with motion designs",
   },
   {
     Icon: MdDeveloperMode,
@@ -49,55 +49,65 @@ export const languages: ISkill[] = [
   {
     name: "Javascript",
     level: "85%",
-    Icon: BsCircleFill,
+    Icon: BsCode,
   },
   {
     name: "TypeScript",
     level: "80%",
-    Icon: BsCircleFill,
+    Icon: BsCode,
   },
   {
     name: "NodeJS",
-    level: "85%",
-    Icon: BsCircleFill,
+    level: "70%",
+    Icon: BsCode,
   },
   {
     name: "PHP",
-    level: "75%",
-    Icon: BsCircleFill,
+    level: "65%",
+    Icon: BsCode,
   },
   {
     name: "GoLang",
-    level: "70%",
-    Icon: BsCircleFill,
+    level: "60%",
+    Icon: BsCode,
   },
   {
     name: "Python",
-    level: "70%",
-    Icon: BsCircleFill,
+    level: "55%",
+    Icon: BsCode,
+  },
+  {
+    name: "AWS Cloud Services",
+    level: "65%",
+    Icon: BsCloud,
   },
 ];
 
 export const tools: ISkill[] = [
   {
+    name: "Github",
+    level: "80%",
+    Icon: BsCode,
+  },
+  {
     name: "Figma",
     level: "85%",
-    Icon: BsCircleFill,
+    Icon: BsTools,
   },
   {
     name: "Photoshop",
     level: "80%",
-    Icon: BsCircleFill,
+    Icon: BsTools,
   },
   {
     name: "Illustrator",
     level: "70%",
-    Icon: BsCircleFill,
+    Icon: BsTools,
   },
   {
     name: "Framer",
     level: "50%",
-    Icon: BsCircleFill,
+    Icon: BsTools,
   },
 ];
 
@@ -131,7 +141,7 @@ export const projects: IProject[] = [
     demo_url: "https://deals.jumia.ci/",
     github_url: "",
     categories: ["vuejs", "nodejs", "php"],
-    stack: ["VueJS", "NodeJS", "Mysql", "Php"],
+    stack: ["VueJS", "NodeJS", "Mysql", "PHP", "AWS"],
   },
   {
     id: 4,
@@ -142,5 +152,49 @@ export const projects: IProject[] = [
     github_url: "",
     categories: ["reactjs", "golang", "mysql"],
     stack: ["NextJs", "Docker", "Redis", "Mysql"],
+  },
+  {
+    id: 5,
+    name: "JForce",
+    description: "Platform to the promoter",
+    image_url: "/images/projects/image_not_available.png",
+    demo_url: "https://jforce.jumia.com.ng/",
+    github_url: "",
+    categories: ["vuejs", "golang", "mysql", "php"],
+    stack: ["NextJs", "Docker", "Redis", "Mysql", "AWS"],
+  },
+  {
+    id: 5,
+    name: "Jumia MDS",
+    description: "Platform for the advertisements publisher",
+    image_url: "/images/projects/image_not_available.png",
+    demo_url: "https://jforce.jumia.com.ng/",
+    github_url: "",
+    categories: ["reactjs", "golang", "mysql"],
+    stack: [
+      "ReactJS",
+      "Typescript",
+      "Golang",
+      "Docker",
+      "Redis",
+      "Mysql",
+      "AWS",
+    ],
+  },
+  {
+    id: 6,
+    name: "Travel Site",
+    description: "Travel Site with gatsby.js",
+    image_url: "/images/projects/image_not_available.png",
+    demo_url: "https://visitnepal-react-gatsby.netlify.app/",
+    github_url: "",
+    categories: ["reactjs", "nodejs"],
+    stack: [
+      "ReactJS",
+      "Gatsbyjs",
+      "NodeJS",
+      "Headless",
+      "Static Site Generator",
+    ],
   },
 ];
