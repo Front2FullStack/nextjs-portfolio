@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 export function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="mt-16 border-t border-gray-300 backdrop-blur supports-[backdrop-filter]:bg-background/40">
-      <div className=" max-w-5xl  py-8 text-xs sm:text-sm flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+    <footer className="px-3 mt-16 border-t  border-gray-300 backdrop-blur supports-[backdrop-filter]:bg-background/40">
+      <div className=" text-center md:text-left max-w-5xl  py-8 text-xs sm:text-sm flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <motion.p
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 0.9, y: 0 }}
@@ -24,13 +24,13 @@ export function Footer() {
             hidden: { opacity: 0 },
             visible: { opacity: 1, transition: { staggerChildren: 0.06 } },
           }}
-          className="flex flex-wrap gap-x-6 gap-y-2 text-muted-foreground/80"
+          className="items-center flex flex-wrap gap-x-6 gap-y-2 text-muted-foreground/80 justify-center"
           aria-label="Auxiliary navigation"
         >
           {[
             { label: "GitHub", href: "https://github.com/sushilparajuli" },
             { label: "LinkedIn", href: "https://www.linkedin.com/in/sushilparajuli" },
-            { label: "Resume", href: "/resume.pdf" },
+            { label: "Resume", href: "/Sr_Sofware_Engineer_FrontEnd_SushilParajuli.pdf" },
           ].map((item) => (
             <motion.li
               key={item.href}

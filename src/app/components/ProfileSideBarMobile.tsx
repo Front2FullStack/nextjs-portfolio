@@ -9,9 +9,13 @@ import {
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import DarkModeButton from "./DarkModeButton";
+import { useTheme } from "next-themes";
 
 const ProfileSidebar = () => {
+  const { theme, setTheme } = useTheme();
+  const changeTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
   const containerVariants = {
     hidden: { opacity: 0.5},
     visible: {
@@ -31,22 +35,13 @@ const ProfileSidebar = () => {
 
   return (
     <motion.div
-      className="w-80 lg:w-80 md:w-72 sm:w-64 bg-sidebar-bg/95 backdrop-blur-xl border-r border-gray-300 border-border/50 p-8 flex flex-col items-center space-y-6 min-h-screen relative overflow-hidden"
+      className=" p-8 flex flex-col items-center space-y-6 relative"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
-      {/* Background decoration */}
-      <div
-        aria-hidden="true"
-        className="absolute top-0 left-0 w-full h-32"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute bottom-4 right-4 w-32 h-32  rounded-full blur-3xl "
-      />
-      
-      <div className="relative z-10 w-full flex flex-col items-center space-y-6">
+
+      <div className="relative  w-full flex flex-col items-center space-y-2">
         {/* Profile Image */}
         <motion.div
           className="relative"
@@ -84,7 +79,7 @@ const ProfileSidebar = () => {
         </motion.div>
 
         {/* Name and Title */}
-        <motion.div className="text-center space-y-3" variants={itemVariants}>
+        <motion.div className="text-center " variants={itemVariants}>
           <motion.h1
             className="text-3xl lg:text-3xl md:text-2xl sm:text-xl font-bold"
             whileHover={{ scale: 1.02 }}
@@ -120,7 +115,7 @@ const ProfileSidebar = () => {
         </motion.div>
 
         {/* Social Links */}
-        <motion.div className="flex space-x-3" variants={itemVariants}>
+        <motion.div className="flex" variants={itemVariants}>
           {[
             { icon: Github, delay: 0, href: "https://github.com/sushilparajuli", label: "GitHub" },
             { icon: Linkedin, delay: 0.1, href: "https://linkedin.com/in/sushilparajuli", label: "LinkedIn" },
@@ -149,7 +144,7 @@ const ProfileSidebar = () => {
 
         {/* Contact Info */}
         <motion.div
-          className="space-y-2 text-center w-full"
+          className="space-y-1 text-center w-full"
           variants={itemVariants}
         >
           {[
@@ -172,11 +167,13 @@ const ProfileSidebar = () => {
         </motion.div>
 
         {/* Action Buttons */}
-        <motion.div className="space-y-3 w-full" variants={itemVariants}>
+        {/* <motion.div className="space-y-3 w-full" variants={itemVariants}>
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-            <DarkModeButton/>
+             <Button   onClick={changeTheme} className="w-full cursor-pointer bg-gradient-to-r from-purple-600 to-purple-500 text-white hover:from-purple-700 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl font-medium">
+             {theme === "light" ? "Dark Mode" : "Light Mode"}
+            </Button>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.div>
   );
