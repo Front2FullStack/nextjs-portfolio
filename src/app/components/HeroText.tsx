@@ -11,34 +11,24 @@ const HeroText = () => {
     <div className="z-10 mt-2 text-center md:text-left rounded-3xl bg-clip-text">
       {/* Desktop View */}
       <div className="flex-col hidden md:flex c-space">
-        {/* <motion.div
-          className="inline-block mb-10"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, type: "spring" }}
-        >
-          <span className="px-4 py-2 bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-full text-sm font-semibold text-primary">
-            👋 Welcome to my portfolio
-          </span>
-        </motion.div> */}
         <motion.h1
-          className="text-4xl font-medium mb-2"
+          className="text-4xl font-bold mb-2"
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1 }}
         >
-          👋 I'm Sushil Parajuli
+          👋 I'm Senior Software Engineer
         </motion.h1>
         <div className="flex flex-col items-start mb-8">
           <motion.p
-            className="text-5xl font-medium text-neutral-900"
+            className="text-4xl  italic"
             variants={variants}
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            A Developer <br /> Dedicated to Crafting
+           Frontend Artisan for
           </motion.p>
           <motion.div
             variants={variants}
@@ -52,13 +42,13 @@ const HeroText = () => {
             />
           </motion.div>
           <motion.p
-            className="text-4xl font-medium text-neutral-900"
+            className="text-4xl font-bold "
             variants={variants}
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Web Solutions
+            Web/Mobile Applications
           </motion.p>
         </div>
       </div>
@@ -81,7 +71,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            Building
+            Frontend Artisan for
           </motion.p>
           <motion.div
             variants={variants}
@@ -101,7 +91,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Web Applications
+            Web/Mobile Applications
           </motion.p>
         </div>
       </div>

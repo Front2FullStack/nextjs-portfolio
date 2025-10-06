@@ -4,7 +4,7 @@ import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex  bg-gradient-to-br from-background via-background to-muted/30 overflow-hidden">
+    <div className="flex  overflow-hidden">
       <div className="hidden min-h-[100dvh] lg:block">
         <ProfileSidebar />
       </div>

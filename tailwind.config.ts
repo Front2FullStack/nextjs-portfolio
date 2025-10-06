@@ -1,7 +1,8 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: 'selector',
+  // Use class strategy so next-themes can toggle by adding 'dark' class to <html>
+  darkMode: 'class',
   content: ["./pages/**/*.{ts,tsx}", "./app/components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/app/**/*.{ts,tsx}"],
   prefix: "",
   theme: {

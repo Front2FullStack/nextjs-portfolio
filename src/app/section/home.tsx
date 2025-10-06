@@ -173,20 +173,6 @@ const Main = () => {
     }
   };
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50, scale: 0.95 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      scale: 1,
-      transition: {
-        duration: 0.6,
-        type: "spring" as const,
-        stiffness: 100
-      }
-    }
-  };
-
   return (
     <div className="flex-1 p-4 sm:p-6 lg:p-8 bg-transparent min-h-screen">
       {/* <Navigation /> */}

@@ -2,7 +2,6 @@
 import {
   Github,
   Linkedin,
-  Twitter,
   Mail,
   Phone,
   Download,
@@ -15,7 +14,6 @@ import { useTheme } from "next-themes";
 const ProfileSidebar = () => {
   const { theme, setTheme } = useTheme();
   const changeTheme = () => {
-    console.log(theme)
     setTheme(theme === "light" ? "dark" : "light");
   };
   const containerVariants = {
@@ -71,7 +69,7 @@ const ProfileSidebar = () => {
             <Image
               height="140"
               width="140"
-              src={"https://avatars.githubusercontent.com/u/5800371?v=4"}
+              src={"/SushilParajuli.png"}
               alt="Sushil Parajuli"
               className="w-35 h-35 rounded-2xl object-cover cursor-pointer border-2 border-white/20"
             />
@@ -92,13 +90,13 @@ const ProfileSidebar = () => {
         {/* Name and Title */}
         <motion.div className="text-center space-y-3" variants={itemVariants}>
           <motion.h1
-            className="text-3xl lg:text-3xl md:text-2xl sm:text-xl font-bold gradient-text"
+            className="text-3xl lg:text-3xl md:text-2xl sm:text-xl font-bold"
             whileHover={{ scale: 1.02 }}
           >
             Sushil Parajuli
           </motion.h1>
           <motion.p
-            className="text-xl md:2xl sm:text-2xl text-muted-foreground font-bold text-purple-700"
+            className="text-xl md:2xl sm:text-2xl  font-bold text-purple-700 "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
@@ -108,7 +106,7 @@ const ProfileSidebar = () => {
          
         </motion.div>
 
-        {/* Download Resume Button */}
+        {/* Download Resume Buttons */}
         <motion.div variants={itemVariants} className="w-full">
           
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -130,7 +128,6 @@ const ProfileSidebar = () => {
           {[
             { icon: Github, delay: 0, href: "https://github.com/sushilparajuli", label: "GitHub" },
             { icon: Linkedin, delay: 0.1, href: "https://linkedin.com/in/sushilparajuli", label: "LinkedIn" },
-            { icon: Twitter, delay: 0.2, href: "https://twitter.com/sushilparajuli", label: "Twitter" },
           ].map(({ icon: Icon, delay, href, label }, index) => (
             <motion.div
               key={index}
@@ -161,7 +158,7 @@ const ProfileSidebar = () => {
         >
           {[
             { icon: Mail, text: "sushilparajuli2010@gmail.com", href: "mailto:sushilparajuli2010@gmail.com" },
-            { icon: Phone, text: "+971-XXXX-XXXX", href: "tel:+971543885308" },
+            { icon: Phone, text: "+971-54388-5308", href: "tel:+971543885308" },
           ].map(({ icon: Icon, text, href }, index) => (
             <motion.a
               key={index}
@@ -181,18 +178,8 @@ const ProfileSidebar = () => {
         {/* Action Buttons */}
         <motion.div className="space-y-3 w-full" variants={itemVariants}>
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-            <Button className="w-full cursor-pointer bg-gradient-to-r from-purple-600 to-purple-500 text-white hover:from-purple-700 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl font-medium">
-              <Mail className="w-4 h-4 mr-2" />
-              Get In Touch
-            </Button>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-            <Button
-              variant="outline"
-              onClick={changeTheme}
-              className="w-full cursor-pointer hover:bg-muted transition-all duration-300 hover:shadow-md font-medium"
-            >
-              Toggle Theme
+             <Button   onClick={changeTheme} className="w-full cursor-pointer bg-gradient-to-r from-purple-600 to-purple-500 text-white hover:from-purple-700 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl font-medium">
+             {theme === "light" ? "Dark Mode" : "Light Mode"}
             </Button>
           </motion.div>
         </motion.div>
