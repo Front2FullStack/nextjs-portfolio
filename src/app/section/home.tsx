@@ -7,6 +7,7 @@ import SkillBadges from '@/components/SkillBadges';
 import ExperienceTimeline from '@/components/ExperienceTimeline';
 import AboutSummary from '@/components/AboutSummary';
 import HeroText from '@/components/HeroText';
+import ProfileSidebarMobile from '@/components/ProfileSideBarMobile';
 
 const Main = () => {
 
@@ -186,6 +187,9 @@ const Main = () => {
       >
         {/* Hero Section */}
         <section id="hero" className="relative py-2 pb-8">
+           <div className="lg:hidden">
+            <ProfileSidebarMobile />
+          </div>
           <motion.div
             variants={itemVariants}
             className="text-center lg:text-left max-w-4xl mx-auto lg:mx-0"
@@ -210,7 +214,7 @@ const Main = () => {
         {/* About Section */}
         <section id="about" className="scroll-mt-20">
            <motion.div 
-            id='skills'
+            id='about'
             className="mb-10"
             variants={itemVariants}
           >

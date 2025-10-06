@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Menu, X, Home, User, Briefcase, FileText } from 'lucide-react';
+import DarkModeButton from './DarkModeButton';
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -89,7 +90,7 @@ const MobileNav = () => {
                   <motion.button
                     key={id}
                     onClick={() => scrollToSection(id)}
-                    className="w-full flex items-center space-x-3 p-3 rounded-lg text-left hover:bg-muted/30 transition-colors duration-200 group"
+                    className="w-full cursor-pointer flex items-center space-x-3 p-3 rounded-lg text-left hover:bg-muted/30 transition-colors duration-200 group"
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 + 0.2 }}
@@ -104,6 +105,7 @@ const MobileNav = () => {
                     </span>
                   </motion.button>
                 ))}
+                <DarkModeButton/>
               </motion.div>
             </motion.div>
           </>
