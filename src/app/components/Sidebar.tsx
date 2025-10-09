@@ -82,7 +82,7 @@ export const Sidebar = () => {
             Email Me
           </button>
           <button
-            onClick={changeTheme}
+            onClick={()=>changeTheme}
             className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-500 dark:from-zinc-900 dark:to-neutral-900 dark:border-white dark:border"
           >
             Toggle Theme

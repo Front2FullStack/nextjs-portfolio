@@ -175,39 +175,27 @@ const Main = () => {
   };
 
   return (
-    <div className="flex-1 p-4 sm:p-6 lg:p-8 bg-transparent min-h-screen">
+    <div className="flex-1 p-4 sm:p-6 lg:p-8  min-h-screen w-[100%]">
       {/* <Navigation /> */}
       <MobileNav />
       
       <motion.div 
-        className="max-w-7xl mx-auto space-y-4"
+        className="space-y-4"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
         {/* Hero Section */}
-        <section id="hero" className="relative py-2 pb-8">
+        <section id="hero" className="relative py-2 pb-8 ">
            <div className="lg:hidden">
             <ProfileSidebarMobile />
           </div>
           <motion.div
             variants={itemVariants}
-            className="text-center lg:text-left max-w-4xl mx-auto lg:mx-0"
+            className="text-center lg:text-left  w-[100%] lg:mx-0"
           >
             <HeroText />
           </motion.div>
-
-          {/* Skill Badges (technology stack overview) */}
-          {/* <motion.div
-          className="inline-block mb-6"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, type: "spring" }}
-        >
-          <span className="px-4 py-1  border border-primary/20 rounded-full text-sm font-semibold text-primary">
-            👨🏻‍💻 Skills/Expertise
-          </span>
-        </motion.div> */}
           <SkillBadges />
         </section>
 
@@ -216,7 +204,7 @@ const Main = () => {
            <motion.div 
             id='about'
             className="mb-10"
-            variants={itemVariants}
+            variants={containerVariants}
           >
             <h3 className="text-2xl sm:text-3xl font-semibold  mb-4 tracking-tight">Intro</h3>
             <p className="text-sm sm:text-base text-muted-foreground max-w-3xl">
@@ -230,7 +218,7 @@ const Main = () => {
           <motion.div 
             id='skills'
             className="mb-10"
-            variants={itemVariants}
+            variants={containerVariants}
           >
             <h3 className="text-2xl sm:text-3xl font-semibold  mb-4 tracking-tight">Skills & Expertise</h3>
             <p className="text-sm sm:text-base text-muted-foreground max-w-3xl ">

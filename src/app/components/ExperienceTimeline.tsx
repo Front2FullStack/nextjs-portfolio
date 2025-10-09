@@ -94,20 +94,17 @@ interface ExperienceTimelineProps {
 
 const containerVariants = {
   hidden: { opacity: 0 },
-  visible: (delay = 0) => ({
-    opacity: 1,
-    transition: { staggerChildren: 0.08, delay }
-  })
+  visible:  { opacity: 1 }
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: { type: 'spring' as const, stiffness: 120, damping: 18 } }
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { type: 'spring' as const, stiffness: 120, damping: 18 } }
 };
 
 const bulletVariants = {
-  hidden: { opacity: 0, x: -12 },
-  visible: { opacity: 1, x: 0, transition: { type: 'spring' as const, stiffness: 180, damping: 20 } }
+  hidden: { opacity: 0, },
+  visible: { opacity: 1, transition: { type: 'spring' as const, stiffness: 180, damping: 20 } }
 };
 
 const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ id = 'experience-timeline', title = 'Experience Timeline', compact = false }) => {
