@@ -136,7 +136,7 @@ const ProfileSidebar = () => {
               <Button
                 variant="ghost"
                 size="icon"
-                className="hover:text-accent hover:bg-accent/10 transition-all duration-300 rounded-xl"
+                className="hover:text-blue-700 transition-all duration-300 rounded-xl"
                 asChild
               >
                 <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
@@ -159,7 +159,7 @@ const ProfileSidebar = () => {
             <motion.a
               key={index}
               href={href}
-              className="flex items-center justify-center space-x-2 text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer p-3 rounded-lg hover:bg-muted/50 group"
+              className="flex items-center justify-center space-x-2 text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer p-3 rounded-lg hover:text-blue-700 group"
               whileHover={{ x: 5 }}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}

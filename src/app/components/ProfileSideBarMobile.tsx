@@ -9,13 +9,9 @@ import {
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useTheme } from "next-themes";
 
-const ProfileSidebar = () => {
-  const { theme, setTheme } = useTheme();
-  const changeTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+const ProfileSidebarMobile = () => {
+
   const containerVariants = {
     hidden: { opacity: 0.5},
     visible: {
@@ -131,7 +127,7 @@ const ProfileSidebar = () => {
               <Button
                 variant="ghost"
                 size="icon"
-                className="hover:text-accent hover:bg-accent/10 transition-all duration-300 rounded-xl"
+                className="hover:text-blue-700 transition-all duration-300 rounded-xl"
                 asChild
               >
                 <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
@@ -154,7 +150,7 @@ const ProfileSidebar = () => {
             <motion.a
               key={index}
               href={href}
-              className="flex items-center justify-center space-x-2 text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer p-3 rounded-lg hover:bg-muted/50 group"
+              className="flex items-center justify-center space-x-2 text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-pointer p-3 rounded-lg hover:text-blue-700 group"
               whileHover={{ x: 5 }}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -165,18 +161,9 @@ const ProfileSidebar = () => {
             </motion.a>
           ))}
         </motion.div>
-
-        {/* Action Buttons */}
-        {/* <motion.div className="space-y-3 w-full" variants={itemVariants}>
-          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-             <Button   onClick={changeTheme} className="w-full cursor-pointer bg-gradient-to-r from-purple-600 to-purple-500 text-white hover:from-purple-700 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl font-medium">
-             {theme === "light" ? "Dark Mode" : "Light Mode"}
-            </Button>
-          </motion.div>
-        </motion.div> */}
       </div>
     </motion.div>
   );
 };
 
-export default ProfileSidebar;
+export default ProfileSidebarMobile;

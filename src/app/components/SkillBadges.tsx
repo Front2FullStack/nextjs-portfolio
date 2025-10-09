@@ -32,28 +32,37 @@ const skillCategories: SkillCategory[] = [
     items: ['Webpack', 'Vite', 'Git', 'npm', 'Yarn', 'pnpm', 'CI/CD Pipelines']
   },
   {
+    category: 'Data Structure and Algorithms',
+    items: ['Arrays & Strings', 'Hash Tables/Maps', 'Stack/Queue', 'Graphs', 'Heaps', 'Dynamic Programming', 'Recursion' ,'Trees (DOM/Virtual DOM)', 'Tries', 'Caching Strategies (LRU/MRU)']
+  },
+   {
+    category: 'Backend Tech Stack',
+    items: ['PHP', 'Golang', 'Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'GraphQL' ,'Redis', 'Elasticsearch',]
+  },
+  {
     category: 'AI Tooling',
     items: ['Cursor IDE', 'GitHub Copilot', 'ChatGPT']
   },
   {
-    category: 'Backend Tech Stack',
-    items: ['PHP', 'Golang', 'Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'GraphQL']
-  }
+    category: 'Web3',
+    items: ['Solidity','Etherjs', 'Web3.js', 'Alchemy', 'Wagmi']
+  },
+  
 ];
 
 const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.05 } }
+  hidden: { opacity: 0.5 },
+  visible: { opacity: 1, transition: { staggerChildren: 0.01 } }
 };
 
 const badgeVariants = {
-  hidden: { opacity: 0, y: 8, scale: 0.95 },
-  visible: { opacity: 1, y: 0, scale: 1, transition: { type: 'spring' as const, stiffness: 160, damping: 18 } }
+  hidden: { opacity: 0,  scale: 0.95 },
+  visible: { opacity: 1, scale: 1, transition: { type: 'spring' as const, stiffness: 160, damping: 18 } }
 };
 
 const itemGroupVariants = {
-  hidden: { opacity: 0, y: 12 },
-  visible: { opacity: 1, y: 0, transition: { type: 'spring' as const, stiffness: 120, damping: 20 } }
+  hidden: { opacity: 0.5, },
+  visible: { opacity: 1, transition: { type: 'spring' as const, stiffness: 120, damping: 20 } }
 };
 
 const SkillBadges: React.FC = () => {
@@ -89,7 +98,7 @@ const SkillBadges: React.FC = () => {
                 variants={badgeVariants}
                 className="relative group"
               >
-                <span className="inline-flex items-center rounded-md border border-border/60 bg-gradient-to-br from-background/70 to-background/40 backdrop-blur-sm px-3 py-1 text-[11px] sm:text-[12.5px] font-medium text-foreground/80 shadow-[0_0_0_1px_rgba(255,255,255,0.03)] hover:border-primary/60 hover:text-primary transition-colors">
+                <span className="inline-flex items-center rounded-md border border-border/60  backdrop-blur-sm px-3 py-1 text-[11px] sm:text-[12.5px] font-medium text-foreground/80 shadow-[0_0_0_1px_rgba(255,255,255,0.03)] hover:border-primary/60 hover:text-primary transition-colors">
                   {item}
                 </span>
               </motion.li>
