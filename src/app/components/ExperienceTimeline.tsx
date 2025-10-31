@@ -1,7 +1,7 @@
 "use client";
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Building, Calendar, MapPin, Globe2, ShieldCheck, Rocket, Workflow } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Calendar, MapPin, Workflow } from "lucide-react";
 
 interface ExperienceItem {
   company: string;
@@ -15,75 +15,75 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    company: 'M2.COM',
-    companyLink: 'https://www.m2.com/',
-    role: 'Senior Front‑End Web Engineer',
-    location: 'Dubai, UAE',
-    period: '2023–Present',
+    company: "M2.COM",
+    companyLink: "https://www.m2.com/",
+    role: "Senior Software Engineer (Full Stack)",
+    location: "Dubai, UAE",
+    period: "2023–Present",
     bullets: [
-      'Lead Portals platform UI development with React + Next.js (App Router & Server Components).',
-    'Rest API integration with microservices architectures written in Java Spring Boot from backend teams',
-       'Driving adoption of TypeScript, testing (Jest, RTL, Cypress), and CI/CD best practices across teams.',
-      'Built reusable design system + Storybook accelerating multi-team delivery consistency.',
-      'Delivered bilingual Arabic/English UX with full RTL, semantic HTML, WCAG 2.1 AA.',
-      'Optimized performance: SSR/ISR, code-splitting, image optimization, edge caching, Core Web Vitals tracking.',
-      'Implemented secure auth (OAuth2/OIDC, httpOnly+SameSite cookies, RBAC via middleware) & CSP/HSTS headers.',
-      'Production observability: Sentry + Datadog instrumentation, CI gates (tests, lint, types).',
-      'Cross-functional feature delivery + mentoring & structured code review culture.',
-      'Regional focus: AED currency/time formats, Arabic SEO/schema, low-latency CDN PoPs, optional Web3 wallet flows.',
-      'Exposure to Flutter App to provide webview support and ensure seamless integration with web components.',
-      'Notabene(Web3 sdk) integration for  crypto wallet/withdraw and travel rules compliance'
+      "Lead Portals platform UI development with Node.js + React + Next.js (App Router & Server Components).",
+      "Rest API integration with microservices architectures written in Java Spring Boot from backend teams",
+      "Driving adoption of TypeScript, testing (Jest, RTL, Cypress), and CI/CD best practices across teams.",
+      "Built reusable design system + Storybook accelerating multi-team delivery consistency.",
+      "Delivered bilingual Arabic/English UX with full RTL, semantic HTML, WCAG 2.1 AA.",
+      "Optimized performance: SSR/ISR, code-splitting, image optimization, edge caching, Core Web Vitals tracking.",
+      "Implemented secure auth (OAuth2/OIDC, httpOnly+SameSite cookies, RBAC via middleware) & CSP/HSTS headers.",
+      "Production observability: Sentry + Datadog instrumentation, CI gates (tests, lint, types).",
+      "Cross-functional feature delivery + mentoring & structured code review culture.",
+      "Regional focus: AED currency/time formats, Arabic SEO/schema, low-latency CDN PoPs, optional Web3 wallet flows.",
+      "Exposure to Flutter App to provide webview support and ensure seamless integration with web components.",
+      "Notabene(Web3 sdk) integration for  crypto wallet/withdraw and travel rules compliance",
     ],
-    tech: 'React, Next.js, TypeScript, HTML5, CSS3, Tailwind, Storybook, Jest, RTL, Cypress, Vercel, Cloudflare, Sentry, Datadog, OAuth/OIDC, CSP, Web3, Crypto Wallet'
+    tech: "Node.js, Next.js, React, TypeScript, HTML5, CSS3, Tailwind, Storybook, Jest, RTL, Cypress, Vercel, Cloudflare, Sentry, Datadog, OAuth/OIDC, CSP, Web3, Crypto Wallet",
   },
   {
-    company: 'Jumia Group',
-    companyLink: 'https://group.jumia.com/',
-    role: 'Full‑Stack UI/UX Developer',
-    location: 'Dubai, UAE',
-    period: '2018–2023',
+    company: "Jumia Group",
+    companyLink: "https://group.jumia.com/",
+    role: "Full Stack Developer",
+    location: "Dubai, UAE",
+    period: "2018–2023",
     bullets: [
-      'Developed reusable UI modules in React & Vue aligned to a shared design system; advanced TypeScript adoption.',
-      'Translated Figma flows into pixel-perfect, responsive, accessible interfaces (WCAG).',
-      'TDD (Jest + RTL), contributed CI quality gates & automation.',
-      'Collaborated on REST API integration & microservices integration patterns.',
-      'Improved SEO & performance using SSR, code-splitting, caching & Core Web Vitals monitoring.',
-      'Strengthened security with CSP, sanitization/escaping, CSRF protections & OAuth/OIDC SSO.',
-      'Supported regional i18n (Arabic/English), locale formatting & mobile-first optimizations.',
-      'Contributed to migrate native apps to React Native for unified codebase and faster feature delivery.',
-      'Achieved 20-30% faster load times and 15% higher user engagement through migrating legacy jQuery code to Nuxt SSR framework'
+      "Developed reusable UI modules in React & Vue aligned to a shared design system; advanced TypeScript adoption.",
+      "Translated Figma flows into pixel-perfect, responsive, accessible interfaces (WCAG).",
+      "TDD (Jest + RTL), contributed CI quality gates & automation.",
+      "Collaborated on REST API integration & microservices integration patterns using Node.js/Golang.",
+      "Improved SEO & performance using SSR, code-splitting, caching & Core Web Vitals monitoring.",
+      "Strengthened security with CSP, sanitization/escaping, CSRF protections & OAuth/OIDC SSO.",
+      "Supported regional i18n (Arabic/English), locale formatting & mobile-first optimizations.",
+      "Contributed to migrate native apps to React Native for unified codebase and faster feature delivery.",
+      "Achieved 20-30% faster load times and 15% higher user engagement through migrating legacy jQuery code to Nuxt SSR framework",
     ],
-    tech: 'React, Vue, TypeScript, HTML5, CSS3, Jest, RTL, Cypress, Node.js, REST, Webpack/Vite, i18n/RTL, SEO/SSR, CSP'
+    tech: "React, Vue, TypeScript, HTML5, CSS3, Jest, RTL, Cypress, Node.js, Golang, REST, Webpack/Vite, i18n/RTL, SEO/SSR, CSP",
   },
   {
-    company: 'GrowByData',
-    companyLink: 'https://growbydata.com/',
-    role: 'Front‑End UI/UX Developer',
-    location: 'Kathmandu, Nepal',
-    period: '2015–2017',
+    company: "GrowByData",
+    companyLink: "https://growbydata.com/",
+    role: "Front‑End UI/UX Developer",
+    location: "Kathmandu, Nepal",
+    period: "2015–2017",
     bullets: [
-      'Created wireframes & prototypes then delivered semantic, responsive UIs (HTML5, CSS3 Flexbox, jQuery, React, AngularJS).',
-      'Built UI components for different squads using AngularJS & React.',
-      'Researched front-end performance & accessibility foundations informing future design-system work.',
-      'Collaborated with backend squad (PHP/.NET) on early RESTful integration patterns.'
+      "Created wireframes & prototypes then delivered semantic, responsive UIs (HTML5, CSS3 Flexbox, jQuery, React, AngularJS).",
+      "Built UI components for different squads using AngularJS & React.",
+      "Researched front-end performance & accessibility foundations informing future design-system work.",
+      "Collaborated with backend squad (PHP/.NET) on early RESTful integration patterns.",
     ],
-    tech: 'HTML5, CSS3, jQuery, AngularJS, React, Git, Agile, Basic a11y & performance'
+    tech: "HTML5, CSS3, jQuery, AngularJS, React, Git, Agile, Basic a11y & performance",
   },
   {
-  company: 'i-Tech Nepal',
-  companyLink: 'https://itechnepal.com/',
-  role: 'Sr. Web Developer',
-  location: 'Kathmandu, Nepal',
-  period: '2013–2015',
-  bullets: [
-    'Designed web and mobile mockups and translated them into responsive, semantic UIs (HTML5, CSS3, jQuery, PHP).',
-    'Developed and customized WordPress themes and templates to meet branding and functional requirements.',
-    'Produced graphics and brand assets (logos, banners, print/digital) to support marketing and product launches.',
-    'Planned projects and conducted research to inform IA, component choices, and UX flows.',
-    'Iterated quickly on client feedback to improve usability, visual polish, and content clarity.'
-  ],
-  tech: 'HTML5, CSS3, jQuery, PHP, WordPress (custom themes), Adobe Photoshop/Illustrator, Wireframing/Prototyping, Basic UX research'
-}
+    company: "i-Tech Nepal",
+    companyLink: "https://itechnepal.com/",
+    role: "Sr. Web Developer",
+    location: "Kathmandu, Nepal",
+    period: "2013–2015",
+    bullets: [
+      "Designed web and mobile mockups and translated them into responsive, semantic UIs (HTML5, CSS3, jQuery, PHP).",
+      "Developed and customized WordPress themes and templates to meet branding and functional requirements.",
+      "Produced graphics and brand assets (logos, banners, print/digital) to support marketing and product launches.",
+      "Planned projects and conducted research to inform IA, component choices, and UX flows.",
+      "Iterated quickly on client feedback to improve usability, visual polish, and content clarity.",
+    ],
+    tech: "HTML5, CSS3, jQuery, PHP, WordPress (custom themes), Adobe Photoshop/Illustrator, Wireframing/Prototyping, Basic UX research",
+  },
 ];
 
 interface ExperienceTimelineProps {
@@ -93,21 +93,31 @@ interface ExperienceTimelineProps {
 }
 
 const containerVariants = {
-  hidden: { opacity: 0 },
-  visible:  { opacity: 1 }
+  hidden: { opacity: 0.5 },
+  visible: { opacity: 1 },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { type: 'spring' as const, stiffness: 120, damping: 18 } }
+  hidden: { opacity: 0.5 },
+  visible: {
+    opacity: 1,
+    transition: { type: "spring" as const, stiffness: 120, damping: 18 },
+  },
 };
 
 const bulletVariants = {
-  hidden: { opacity: 0, },
-  visible: { opacity: 1, transition: { type: 'spring' as const, stiffness: 180, damping: 20 } }
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { type: "spring" as const, stiffness: 180, damping: 20 },
+  },
 };
 
-const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ id = 'experience-timeline', title = 'Experience Timeline', compact = false }) => {
+const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({
+  id = "experience-timeline",
+  title = "Experience Timeline",
+  compact = false,
+}) => {
   return (
     <section id={id} className="scroll-mt-28">
       <motion.div
@@ -129,7 +139,9 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ id = 'experienc
             variants={itemVariants}
             className="mt-4 text-muted-foreground max-w-3xl  text-sm sm:text-base"
           >
-            Progressive roles and measurable impact, with advancing leadership in architectural excellence, accessibility, performance discipline, security posture, and developer enablement.
+            Progressive roles and measurable impact, with advancing leadership
+            in architectural excellence, accessibility, performance discipline,
+            security posture, and developer enablement.
           </motion.p>
         </div>
 
@@ -149,7 +161,10 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ id = 'experienc
                 className="relative group"
               >
                 {/* Node */}
-                <span className="absolute -left-[7px] top-2 w-3 h-3 rounded-full  shadow shadow-primary/30 ring-2 ring-background" aria-hidden="true" />
+                <span
+                  className="absolute -left-[7px] top-2 w-3 h-3 rounded-full  shadow shadow-primary/30 ring-2 ring-background"
+                  aria-hidden="true"
+                />
                 {/* Connector extension to next node (hidden for last) */}
                 {i < experiences.length - 1 && (
                   <span
@@ -174,11 +189,20 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ id = 'experienc
                         ) : (
                           <span className="text-primary">{exp.company}</span>
                         )}
-                        <span className="text-muted-foreground"> — {exp.role}</span>
+                        <span className="text-muted-foreground">
+                          {" "}
+                          — {exp.role}
+                        </span>
                       </h3>
                       <p className="text-xs sm:text-sm text-muted-foreground flex items-center gap-3 flex-wrap">
-                        <span className="inline-flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-primary" />{exp.location}</span>
-                        <span className="inline-flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5 text-accent" />{exp.period}</span>
+                        <span className="inline-flex items-center gap-1.5">
+                          <MapPin className="w-3.5 h-3.5 text-primary" />
+                          {exp.location}
+                        </span>
+                        <span className="inline-flex items-center gap-1.5">
+                          <Calendar className="w-3.5 h-3.5 text-accent" />
+                          {exp.period}
+                        </span>
                       </p>
                     </div>
                   </div>
@@ -188,19 +212,25 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ id = 'experienc
                     viewport={{ once: true, amount: 0.3 }}
                     className="mt-4 space-y-2"
                   >
-                    {exp.bullets.map(b => (
+                    {exp.bullets.map((b) => (
                       <motion.li
                         key={b}
                         variants={bulletVariants}
-                        className="relative pl-4 text-[13.5px] sm:text-sm text-muted-foreground leading-relaxed"
+                        className="relative pl-4 text-[16px] sm:text-sm text-muted-foreground leading-relaxed"
                       >
-                        <span className="absolute left-0 top-2 w-2 h-2 rounded-sm rotate-45 bg-gradient-to-br from-primary to-accent" aria-hidden="true" />
+                        <span
+                          className="absolute left-0 top-2 w-2 h-2 rounded-sm rotate-45 bg-gradient-to-br from-primary to-accent"
+                          aria-hidden="true"
+                        />
                         <span>{b}</span>
                       </motion.li>
                     ))}
                   </motion.ul>
                   <div className="mt-4 pt-3 border-t border-border/50">
-                    <p className="text-[12px] sm:text-xs uppercase tracking-wide text-muted-foreground/80 font-bold flex items-center gap-2"><Workflow className="w-3.5 h-3.5" />Tech: {exp.tech}</p>
+                    <p className="text-[12px] sm:text-xs uppercase tracking-wide text-muted-foreground/80 font-bold flex items-center gap-2">
+                      <Workflow className="w-3.5 h-3.5" />
+                      Tech: {exp.tech}
+                    </p>
                   </div>
                 </div>
               </motion.li>

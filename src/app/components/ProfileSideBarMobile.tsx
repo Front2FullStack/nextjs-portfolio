@@ -1,19 +1,12 @@
 "use client";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  Phone,
-  Download,
-} from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 const ProfileSidebarMobile = () => {
-
   const containerVariants = {
-    hidden: { opacity: 0.5},
+    hidden: { opacity: 0.5 },
     visible: {
       opacity: 1,
       x: 0,
@@ -26,7 +19,7 @@ const ProfileSidebarMobile = () => {
 
   const itemVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1},
+    visible: { opacity: 1 },
   };
 
   return (
@@ -36,7 +29,6 @@ const ProfileSidebarMobile = () => {
       initial="hidden"
       animate="visible"
     >
-
       <div className="relative  w-full flex flex-col items-center space-y-2">
         {/* Profile Image */}
         <motion.div
@@ -88,21 +80,23 @@ const ProfileSidebarMobile = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Senior Software Engineer (Frontend)
+            Senior Software Engineer (Full Stack)
           </motion.p>
-         
         </motion.div>
 
         {/* Download Resume Buttons */}
         <motion.div variants={itemVariants} className="w-full">
-          
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
             <Button
               variant="outline"
               className="w-full hover:bg-muted transition-all duration-300 hover:shadow-md font-medium"
               asChild
             >
-              <a href="/Sr_Sofware_Engineer_FrontEnd_SushilParajuli.pdf" download="Sr_Sofware_Engineer_FrontEnd_SushilParajuli.pdf">
+              <a
+                target="_blank"
+                href="/Sr_Sofware_Engineer_FullStack_SushilParajuli.pdf"
+                download="Sr_Sofware_Engineer_FullStack_SushilParajuli.pdf"
+              >
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume
               </a>
@@ -113,8 +107,18 @@ const ProfileSidebarMobile = () => {
         {/* Social Links */}
         <motion.div className="flex" variants={itemVariants}>
           {[
-            { icon: Github, delay: 0, href: "https://github.com/sushilparajuli", label: "GitHub" },
-            { icon: Linkedin, delay: 0.1, href: "https://linkedin.com/in/sushilparajuli", label: "LinkedIn" },
+            {
+              icon: Github,
+              delay: 0,
+              href: "https://github.com/sushilparajuli",
+              label: "GitHub",
+            },
+            {
+              icon: Linkedin,
+              delay: 0.1,
+              href: "https://linkedin.com/in/sushilparajuli",
+              label: "LinkedIn",
+            },
           ].map(({ icon: Icon, delay, href, label }, index) => (
             <motion.div
               key={index}
@@ -130,7 +134,12 @@ const ProfileSidebarMobile = () => {
                 className="hover:text-blue-700 transition-all duration-300 rounded-xl"
                 asChild
               >
-                <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                >
                   <Icon className="w-5 h-5" />
                 </a>
               </Button>
@@ -144,7 +153,11 @@ const ProfileSidebarMobile = () => {
           variants={itemVariants}
         >
           {[
-            { icon: Mail, text: "sushilparajuli2010@gmail.com", href: "mailto:sushilparajuli2010@gmail.com" },
+            {
+              icon: Mail,
+              text: "sushilparajuli2010@gmail.com",
+              href: "mailto:sushilparajuli2010@gmail.com",
+            },
             { icon: Phone, text: "+971-54388-5308", href: "tel:+971543885308" },
           ].map(({ icon: Icon, text, href }, index) => (
             <motion.a

@@ -16,8 +16,8 @@ interface CapabilityCardProps extends Capability {
 
 // Motion variants (allowing bullet stagger)
 const cardVariants = {
-  hidden: { opacity: 0, y: 40, scale: 0.97 },
-  visible: { opacity: 1, y: 0, scale: 1 }
+  hidden: { opacity: 0.3, y: 40, scale: 0.97 },
+  visible: { opacity: 1, y: 0, scale: 1 },
 } as const;
 
 const listVariants = {
@@ -25,16 +25,22 @@ const listVariants = {
   visible: {
     transition: {
       staggerChildren: 0.08,
-    }
-  }
+    },
+  },
 };
 
 const pointVariants = {
-  hidden: { opacity: 0, x: -12 },
-  visible: { opacity: 1, x: 0 }
+  hidden: { opacity: 0, x: -5 },
+  visible: { opacity: 1, x: 0 },
 } as const;
 
-export const CapabilityCard: React.FC<CapabilityCardProps> = ({ title, summary, points, icon: Icon, index = 0 }) => {
+export const CapabilityCard: React.FC<CapabilityCardProps> = ({
+  title,
+  summary,
+  points,
+  icon: Icon,
+  index = 0,
+}) => {
   return (
     <motion.div
       role="listitem"
@@ -43,7 +49,12 @@ export const CapabilityCard: React.FC<CapabilityCardProps> = ({ title, summary, 
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ delay: index * 0.05, type: "spring", stiffness: 120, damping: 18 }}
+      transition={{
+        delay: index * 0.05,
+        type: "spring",
+        stiffness: 120,
+        damping: 18,
+      }}
       className={cn(
         "relative group rounded-xl border border-border/80 border-purple-500 min-h-[100%]  ",
         "backdrop-blur-sm p-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/60",
@@ -68,7 +79,10 @@ export const CapabilityCard: React.FC<CapabilityCardProps> = ({ title, summary, 
               <span className="sr-only">{title} icon</span>
             </div>
             {/* accent bar */}
-            <span className="absolute -left-3 top-1/2 -translate-y-1/2 w-1.5 h-9 rounded-full bg-gradient-to-b from-primary to-accent opacity-0 group-hover:opacity-90 group-focus-visible:opacity-90 transition-opacity" aria-hidden="true" />
+            <span
+              className="absolute -left-3 top-1/2 -translate-y-1/2 w-1.5 h-9 rounded-full bg-gradient-to-b from-primary to-accent opacity-0 group-hover:opacity-90 group-focus-visible:opacity-90 transition-opacity"
+              aria-hidden="true"
+            />
           </div>
           <div className="min-w-0 flex-1">
             <h4 className="text-[15px] sm:text-base font-semibold mb-1 tracking-tight text-foreground group-hover:text-primary group-focus-visible:text-primary transition-colors leading-snug">

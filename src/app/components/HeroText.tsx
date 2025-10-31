@@ -4,22 +4,22 @@ import { motion } from "motion/react";
 const HeroText = () => {
   const words: string[] = ["Robust", "Secure", "Agile", "Scalable"];
   const variants = {
-    hidden: { opacity: 0},
-    visible: { opacity: 1},
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
   };
   return (
     <div className="z-10 mt-2 text-center md:text-left rounded-3xl bg-clip-text">
       {/* Desktop View */}
-     
+
       <motion.p
-            className="text-2xl font-light mb-1"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.2 }}
-          >
-           👋 I'm Sushil Parajuli
-          </motion.p>
+        className="text-2xl font-light mb-1"
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 1.2 }}
+      >
+        👋 I'm Sushil Parajuli
+      </motion.p>
 
       <div className="flex-col hidden md:flex c-space">
         <motion.h1
@@ -29,7 +29,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-        Senior Software Engineer (Frontend)
+          Senior Software Engineer (Full Stack)
         </motion.h1>
         <div className="flex flex-col items-start mb-8">
           <motion.p
@@ -39,7 +39,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-          dedicated to craft
+            dedicated to craft
           </motion.p>
           <motion.div
             variants={variants}
@@ -73,7 +73,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-           Senior Frontend Engineer
+          Senior Full Stack Engineer
         </motion.p>
         <div>
           <motion.p
@@ -83,7 +83,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-          dedicated to craft
+            dedicated to craft
           </motion.p>
           <motion.div
             variants={variants}

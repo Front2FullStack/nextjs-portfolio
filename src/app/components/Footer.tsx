@@ -14,7 +14,8 @@ export function Footer() {
           transition={{ duration: 0.4, ease: "easeOut" }}
           className="text-muted-foreground"
         >
-          © {year} <span className="font-medium ">Sushil Parajuli</span>. All rights reserved.
+          © {year} <span className="font-medium ">Sushil Parajuli</span>. All
+          rights reserved.
         </motion.p>
         <motion.ul
           initial="hidden"
@@ -29,17 +30,30 @@ export function Footer() {
         >
           {[
             { label: "GitHub", href: "https://github.com/sushilparajuli" },
-            { label: "LinkedIn", href: "https://www.linkedin.com/in/sushilparajuli" },
-            { label: "Resume", href: "/Sr_Sofware_Engineer_FrontEnd_SushilParajuli.pdf" },
+            {
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/in/sushilparajuli",
+            },
+            {
+              label: "Resume",
+              href: "/Sr_Sofware_Engineer_FullStack_SushilParajuli.pdf",
+            },
           ].map((item) => (
             <motion.li
               key={item.href}
-              variants={{ hidden: { opacity: 0, y: 4 }, visible: { opacity: 1, y: 0 } }}
+              variants={{
+                hidden: { opacity: 0, y: 4 },
+                visible: { opacity: 1, y: 0 },
+              }}
             >
               <a
                 href={item.href}
                 target={item.href.startsWith("http") ? "_blank" : undefined}
-                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                rel={
+                  item.href.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
                 className="hover:text-blue-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
               >
                 {item.label}
