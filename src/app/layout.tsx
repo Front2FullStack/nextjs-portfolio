@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
@@ -13,22 +13,32 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
-  title: "Sushil Parajuli - Senior Software Engineer (Full Stack)",
+  title: "Sushil Parajuli - Senior Full Stack Engineer | Generative AI",
   description:
-    "Senior Software Engineer (Full Stack) with 10+ years of experience specializing in React, Vue.js, Node.js, GoLang, and modern web technologies. Building scalable applications and exceptional digital experiences.",
+    "Senior Full Stack Engineer with 10+ years architecting high-scale, resilient platforms across FinTech, Crypto, and E-commerce. Expert in React, Next.js, Node.js, Python, Golang, Apache Kafka, Generative AI (Claude API, MCP, GraphRAG), and real-time data visualization.",
   keywords: [
-    "Software Engineer",
-    "Frontend",
-    "Full Stack",
-    "FullStack",
+    "Senior Full Stack Engineer",
+    "Generative AI",
+    "LLMs",
+    "Model Context Protocol",
+    "Claude API",
     "React",
-    "Vue.js",
-    "Node.js",
-    "GoLang",
-    "Web Developer",
-    "JavaScript",
+    "Next.js",
     "TypeScript",
+    "Node.js",
+    "FastAPI",
+    "Python",
+    "Golang",
+    "Apache Kafka",
+    "Distributed Systems",
+    "TradingView",
+    "ECharts",
     "Sushil Parajuli",
     "Dubai",
     "UAE",
@@ -36,21 +46,20 @@ export const metadata: Metadata = {
   authors: [{ name: "Sushil Parajuli" }],
   creator: "Sushil Parajuli",
   openGraph: {
-    title: "Sushil Parajuli - Senior Software Engineer (Full Stack)",
+    title: "Sushil Parajuli - Senior Full Stack Engineer | Generative AI",
     description:
-      "Senior Software Engineer (Full Stack) specializing in modern web technologies with 10+ years of experience",
+      "Senior Full Stack Engineer specializing in Generative AI, Distributed Systems, Next.js, Node.js, Python, Golang with 10+ years of experience.",
     url: "https://sushilparajuli.com",
     siteName: "Sushil Parajuli's Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sushil Parajuli - Senior Software Engineer (Full Stack)",
+    title: "Sushil Parajuli - Senior Full Stack Engineer | Generative AI",
     description:
-      "Senior Software Engineer (Full Stack) - 10+ years of experience",
+      "Senior Full Stack Engineer with 10+ years architecting high-scale platforms and AI systems.",
     creator: "@sushilparajuli",
   },
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
 };
 

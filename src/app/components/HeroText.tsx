@@ -2,7 +2,7 @@ import { FlipWords } from "./FlipWords";
 import { motion } from "motion/react";
 
 const HeroText = () => {
-  const words: string[] = ["Robust", "Secure", "Agile", "Scalable"];
+  const words: string[] = ["Robust", "Intelligent", "Scalable", "Distributed", "Real-Time", "Secure"];
   const variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -23,14 +23,23 @@ const HeroText = () => {
 
       <div className="flex-col hidden md:flex c-space">
         <motion.h1
-          className="text-4xl font-bold mb-2"
+          className="text-4xl font-bold mb-1"
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Senior Software Engineer (Full Stack)
+          Senior Full Stack Engineer
         </motion.h1>
+        <motion.p
+          className="text-sm font-semibold tracking-wider text-purple-600 dark:text-purple-400 uppercase mb-3"
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 1.1 }}
+        >
+          Generative AI • React • Next.js • Node.js • AI/LLMs • Python • Golang
+        </motion.p>
         <div className="flex flex-col items-start mb-8">
           <motion.p
             className="text-4xl  italic"
@@ -60,21 +69,32 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Web/Mobile Applications.
+            Web &amp; Distributed AI Systems.
           </motion.p>
         </div>
       </div>
       {/* Mobile View */}
-      <div className="flex- flex-col space-y-6 mb-1 md:hidden ">
-        <motion.p
-          className="text-3xl font-bold"
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 1 }}
-        >
-          Senior Full Stack Engineer
-        </motion.p>
+      <div className="flex- flex-col space-y-4 mb-1 md:hidden ">
+        <div>
+          <motion.p
+            className="text-3xl font-bold"
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 1 }}
+          >
+            Senior Full Stack Engineer
+          </motion.p>
+          <motion.p
+            className="text-xs font-semibold tracking-wider text-purple-600 dark:text-purple-400 uppercase mt-1"
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 1.1 }}
+          >
+            Generative AI • Distributed Systems
+          </motion.p>
+        </div>
         <div>
           <motion.p
             className="text-3xl  mb-2  italic"
@@ -94,7 +114,7 @@ const HeroText = () => {
           >
             <FlipWords
               words={words}
-              className="font-bold text-purple-500 text-7xl"
+              className="font-bold text-purple-500 text-6xl"
             />
           </motion.div>
           <motion.p
@@ -104,7 +124,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Web/Mobile Applications
+            Web &amp; Distributed AI Systems
           </motion.p>
         </div>
       </div>

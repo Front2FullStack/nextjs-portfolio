@@ -11,43 +11,61 @@ const skillCategories: SkillCategory[] = [
   {
     category: 'Frontend Tech Stack',
     items: [
-      'React.js', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3',
-      'Tailwind CSS', 'Styled Components', 'Vue.js', 'Nuxt.js' , 'Gsap', 'Three.js'
+      'React.js', 'Next.js 14+', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3',
+      'Tailwind CSS', 'Vue.js', 'Nuxt.js', 'Redux Toolkit', 'Zustand', 'TanStack Query',
+      'i18n (Arabic/English)', 'RTL', 'Gsap', 'Three.js'
     ]
   },
   {
-    category: 'State Management',
-    items: ['Redux', 'Context API', 'Zustand']
+    category: 'AI & LLM Engineering',
+    items: [
+      'Claude API (Anthropic)', 'Model Context Protocol (MCP)', 'GraphRAG',
+      'Multi-Agent Orchestration', 'Prompt Engineering', 'Structured Outputs',
+      'Autonomous Dev Tools', 'Cursor IDE', 'GitHub Copilot', 'ChatGPT'
+    ]
   },
   {
-    category: 'Testing & Quality',
-    items: ['TDD', 'Jest', 'React Testing Library', 'Cypress']
+    category: 'Data Visualization & Real-Time',
+    items: [
+      'TradingView Lightweight Charts', 'ECharts', 'Ag-Grid', 'ReactFlow',
+      'Monaco Editor', 'Recharts', 'TanStack Table', 'WebSockets',
+      'Server-Sent Events (SSE)', 'Virtualization'
+    ]
   },
   {
-    category: 'UI / Component Libraries',
-    items: ['Figma', 'Storybook', 'Material-UI', 'Ant Design', 'Tailwind CSS', 'shadcn/ui']
+    category: 'Backend – Node.js',
+    items: ['Node.js', 'NestJS', 'Fastify', 'Express', 'Zod', 'Prisma', 'TypeORM', 'Socket.io', 'BullMQ']
   },
   {
-    category: 'Tools & Workflow',
-    items: ['Webpack', 'Vite', 'Git', 'npm', 'Yarn', 'pnpm', 'CI/CD Pipelines']
+    category: 'Backend – Python',
+    items: ['Python', 'FastAPI', 'Pydantic v2', 'SQLAlchemy', 'SQLModel', 'Alembic', 'Celery', 'Redis', 'Pandas', 'Pytest']
+  },
+  {
+    category: 'Backend – Golang',
+    items: ['Golang', 'Gin', 'Echo', 'Fiber', 'GORM', 'sqlx', 'gRPC', 'Protobuf', 'Sarama/kafka-go']
+  },
+  {
+    category: 'Distributed Systems & Cloud',
+    items: [
+      'Apache Kafka', 'PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch', 'GraphQL',
+      'Docker', 'Kubernetes (K8s)', 'AWS', 'Azure', 'GCP', 'GitHub Actions', 'Jenkins', 'GitLab CI'
+    ]
+  },
+  {
+    category: 'Quality, Security & Architecture',
+    items: [
+      'Agile/Scrum', 'TDD', 'Jest', 'React Testing Library', 'Cypress', 'Playwright', 'Pytest',
+      'WCAG 2.1 AA', 'Core Web Vitals', 'OAuth2 / OIDC', 'RBAC', 'CSP / HSTS', 'Storybook', 'Figma'
+    ]
+  },
+  {
+    category: 'Mobile & Web3',
+    items: ['React Native (Expo / Hermes)', 'Flutter (Webview)', 'Ethers.js', 'Wagmi', 'Notabene Web3 SDK', 'Solidity', 'Web3.js', 'Alchemy']
   },
   {
     category: 'Data Structure and Algorithms',
-    items: ['Arrays & Strings', 'Hash Tables/Maps', 'Stack/Queue', 'Graphs', 'Heaps', 'Dynamic Programming', 'Recursion' ,'Trees (DOM/Virtual DOM)', 'Tries', 'Caching Strategies (LRU/MRU)']
+    items: ['Arrays & Strings', 'Hash Tables/Maps', 'Stack/Queue', 'Graphs', 'Heaps', 'Dynamic Programming', 'Recursion', 'Trees (DOM/Virtual DOM)', 'Tries', 'Caching Strategies (LRU/MRU)']
   },
-   {
-    category: 'Backend Tech Stack',
-    items: ['PHP', 'Golang', 'Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'GraphQL' ,'Redis', 'Elasticsearch',]
-  },
-  {
-    category: 'AI Tooling',
-    items: ['Cursor IDE', 'GitHub Copilot', 'ChatGPT']
-  },
-  {
-    category: 'Web3',
-    items: ['Solidity','Etherjs', 'Web3.js', 'Alchemy', 'Wagmi']
-  },
-  
 ];
 
 const containerVariants = {

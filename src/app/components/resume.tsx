@@ -16,49 +16,56 @@ import { Card } from "./ui/card";
 // Data sets (could be elevated to props later if needed)
 const workExperience = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Jumia Group",
-    period: "2020 - Present",
+    title: "Senior Software Engineer",
+    company: "MULTIBANK",
+    period: "2025 – Present",
     description:
-      "Leading development of scalable e-commerce platforms using React, Vue.js, Node.js, and GoLang. Built microservices architecture, implemented CI/CD pipelines, and mentored junior developers across multiple African markets.",
+      "Engineering frontend for regulated multi-tenant crypto/fintech SaaS platform with real-time streaming interfaces (WebSockets, TradingView, ECharts, AgGrid) and event-driven microservices via Apache Kafka, FastAPI, Golang, and Node.js.",
+  },
+  {
+    title: "Senior Software Engineer",
+    company: "M2.COM",
+    period: "2023 – 2025",
+    description:
+      "Directed full-stack development of crypto trading platform (React + Next.js + TypeScript + Node.js) with live trading, staking, multi-chain wallet integration (Notabene Web3 SDK), and real-time streaming dashboards.",
   },
   {
     title: "Full Stack Developer",
-    company: "Tech Solutions Ltd.",
-    period: "2018 - 2020",
+    company: "Jumia Group",
+    period: "2018 – 2023",
     description:
-      "Developed responsive web applications using React, Vue.js, and PHP. Collaborated with cross-functional teams to deliver high-quality solutions for various clients across different industries.",
+      "Engineered scalable e-commerce modules for Africa's largest marketplace. Handled 100,000+ TPS during peak sales with Golang, built FastAPI/Celery catalog pipelines, and transitioned REST to GraphQL reducing mobile data by 50%.",
   },
   {
-    title: "Frontend Developer",
-    company: "Digital Agency Nepal",
-    period: "2016 - 2018",
+    title: "Front‑End UI/UX Developer",
+    company: "GrowByData",
+    period: "2015 – 2016",
     description:
-      "Built modern web interfaces using JavaScript, HTML5, CSS3, and early React. Worked closely with designers to implement pixel-perfect designs and ensure cross-browser compatibility.",
+      "Prototyped responsive UIs and components across multiple squads using AngularJS, React, HTML5, and CSS3, establishing front-end performance and accessibility foundations.",
   },
   {
-    title: "Junior Web Developer",
-    company: "StartUp Studio",
-    period: "2014 - 2016",
+    title: "Sr. Web Developer",
+    company: "i-Tech Nepal",
+    period: "2013 – 2015",
     description:
-      "Started career building websites using PHP, MySQL, and jQuery. Gained experience in full development lifecycle from requirements gathering to deployment and maintenance.",
+      "Delivered mobile-first responsive web applications with PHP, jQuery, and HTML5/CSS3, reducing turnaround time by 20% through reusable component libraries.",
   },
 ];
 
 const education = [
   {
-    degree: "Bachelor of Computer Engineering",
-    institution: "Tribhuvan University, Nepal",
-    year: "2014",
+    degree: "Bachelor of Business Studies",
+    institution: "Tribhuvan University",
+    year: "2010 – 2014",
     description:
-      "Graduated with focus on Software Engineering, Database Systems, and Computer Networks. Built strong foundation in programming fundamentals and system design.",
+      "Graduated with strong foundation in business systems, organizational economics, and management fundamentals.",
   },
   {
-    degree: "Full Stack Web Development",
-    institution: "Various Online Platforms & Certifications",
-    year: "2015-2023",
+    degree: "Professional Certifications",
+    institution: "Anthropic, AWS, Cypress & Industry Leaders",
+    year: "Continuous",
     description:
-      "Continuous learning through platforms like Udemy, Coursera, and official documentation. Specialized in modern JavaScript frameworks, cloud technologies, and DevOps practices.",
+      "Building with the Claude API (Anthropic) • Advanced React for Enterprise • SOLID Design Principles • Master Go Programming • Micro Front-End Architecture with React • Serverless Architecture • AWS Essential for Developers • End-to-End Testing with Cypress.io",
   },
 ];
 
@@ -246,8 +253,8 @@ const ResumeSection: React.FC<ResumeSectionProps> = ({
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="/Sr_Sofware_Engineer_FullStack_SushilParajuli.pdf"
-                  download="Sr_Sofware_Engineer_FullStack_SushilParajuli.pdf"
+                  href="/Sushil-Parajuli-FullStack-latest.pdf"
+                  download="Sushil-Parajuli-FullStack-latest.pdf"
                 >
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-accent via-primary to-accent opacity-0 group-hover:opacity-100"
@@ -310,22 +317,22 @@ const ResumeSection: React.FC<ResumeSectionProps> = ({
               {[
                 {
                   icon: Mail,
-                  text: "sushil@parajuli.com",
-                  href: "mailto:sushil@parajuli.com",
+                  text: "sushilparajuli2010@gmail.com",
+                  href: "mailto:sushilparajuli2010@gmail.com",
                   label: "Email Me",
                   color: "from-blue-500/20 to-purple-500/20",
                 },
                 {
                   icon: Phone,
-                  text: "+977-XXXX-XXXX",
-                  href: "tel:+977XXXXXXXX",
+                  text: "+971-54388-5308",
+                  href: "tel:+971543885308",
                   label: "Call Me",
                   color: "from-green-500/20 to-emerald-500/20",
                 },
                 {
                   icon: MapPin,
-                  text: "Nepal/Remote",
-                  href: "https://maps.google.com/place/Nepal",
+                  text: "Dubai, UAE / Remote",
+                  href: "#",
                   label: "Location",
                   color: "from-red-500/20 to-orange-500/20",
                 },

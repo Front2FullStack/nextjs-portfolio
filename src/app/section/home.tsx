@@ -1,7 +1,7 @@
 "use client";
 import MobileNav from '@/components/MobileNav';
 import { motion } from 'framer-motion';
-import { TestTube, Layers, Box, Accessibility, Settings2, Users, ShieldCheck, MonitorSmartphone, BarChart3, Component, GitBranch, Rocket, Gauge } from 'lucide-react';
+import { TestTube, Layers, Box, Accessibility, Settings2, Users, ShieldCheck, MonitorSmartphone, BarChart3, Component, GitBranch, Rocket, Gauge, Bot, Activity, Workflow, Smartphone } from 'lucide-react';
 import CapabilityCard, { Capability } from '@/components/CapabilityCard';
 import SkillBadges from '@/components/SkillBadges';
 import ExperienceTimeline from '@/components/ExperienceTimeline';
@@ -14,6 +14,36 @@ const Main = () => {
   // Capabilities derived from professional responsibilities provided.
   // Note: Security item intentionally placed last and displayed full-row at larger breakpoints.
   const capabilities: Capability[] = [
+    {
+      title: 'AI Engineering & Agent Architecture',
+      icon: Bot,
+      summary: 'Production LLM systems, intelligent agents & MCP infrastructure.',
+      points: [
+        'Claude API, prompt engineering & structured outputs',
+        'Model Context Protocol (MCP) & GraphRAG platforms',
+        'Autonomous agent orchestration & hallucination prevention'
+      ]
+    },
+    {
+      title: 'Real-Time Data Visualization',
+      icon: Activity,
+      summary: 'High-frequency streaming charts, orderbooks & analytics.',
+      points: [
+        'TradingView, ECharts, AgGrid & Recharts integration',
+        'WebSockets & SSE for sub-second live data feeds',
+        'DOM/table virtualization for high-throughput trading data'
+      ]
+    },
+    {
+      title: 'Distributed Systems & Event Streams',
+      icon: Workflow,
+      summary: 'Resilient microservices, high throughput & event streaming.',
+      points: [
+        'Apache Kafka event streaming with message ordering',
+        'High-concurrency services with FastAPI, Golang & Node.js',
+        'gRPC, Protobuf & RESTful contract-first design'
+      ]
+    },
     {
       title: 'High‑Impact Web UI Engineering',
       icon: MonitorSmartphone,
@@ -31,7 +61,7 @@ const Main = () => {
       points: [
         'Semantic HTML5, CSS Grid / Flexbox',
         'Keyboard & screen reader workflows',
-        'Color contrast and motion‑reduction care'
+        'Bilingual Arabic/English i18n & full RTL support'
       ]
     },
     {
@@ -40,7 +70,7 @@ const Main = () => {
       summary: 'Scalable component libraries & tokens for consistency.',
       points: [
         'Systematized primitives & variants',
-        'Storybook documentation & visual tests',
+        'Storybook documentation & visual regression tests',
         'Theming + dark mode architecture'
       ]
     },
@@ -49,8 +79,8 @@ const Main = () => {
       icon: TestTube,
       summary: 'Defense‑in‑depth automated testing & CI gating.',
       points: [
-        'Unit & integration (Jest + RTL)',
-        'E2E coverage (Cypress/Playwright)',
+        'Unit & integration (Jest + RTL + Pytest)',
+        'E2E coverage (Cypress / Playwright)',
         'Pre‑merge performance & a11y checks'
       ]
     },
@@ -59,7 +89,7 @@ const Main = () => {
       icon: Users,
       summary: 'Partnering across Product, Design & Backend.',
       points: [
-        'Refinement & grooming leadership',
+        'Agile/Scrum sprint planning & backlog refinement',
         'Structured code reviews with coaching',
         'Clear technical documentation'
       ]
@@ -70,8 +100,8 @@ const Main = () => {
       summary: 'Relentless focus on fast, smooth experiences.',
       points: [
         'SSR/ISR & granular code‑splitting',
-        'Lighthouse/Core Web Vitals tracking',
-        'Runtime budgets & bundle analysis'
+        'Lighthouse/Core Web Vitals tracking (LCP, CLS)',
+        'Runtime budgets & bundle analysis (30% load reduction)'
       ]
     },
     {
@@ -80,28 +110,28 @@ const Main = () => {
       summary: 'Proactive monitoring & rapid incident response.',
       points: [
         'Instrumentation (Sentry / Datadog)',
-        'Real user metrics dashboards',
-        'Structured debugging playbooks'
+        'Real user metrics dashboards & alert routing',
+        'Targeting 99.9% uptime during high-traffic peaks'
       ]
     },
     {
-      title: 'Mentorship & Engineering Culture',
+      title: 'Mentorship & AI Workflows',
       icon: GitBranch,
-      summary: 'Developing talent & elevating team standards.',
+      summary: 'Developing talent & elevating engineering standards.',
       points: [
-        'Pair programming & onboarding paths',
-        'Actionable review feedback loops',
-        'Growth frameworks & knowledge sharing'
+        'Mentoring 5+ engineers on clean TypeScript architecture',
+        'AI-assisted development (GitHub Copilot & Cursor)',
+        'Growth frameworks & engineering knowledge sharing'
       ]
     },
     {
-      title: 'Modern Web3 Integration',
-      icon: Layers,
-      summary: 'Secure wallet & smart contract experiences.',
+      title: 'Mobile & Web3 Architecture',
+      icon: Smartphone,
+      summary: 'Cross-platform mobile apps & secure Web3 wallet flows.',
       points: [
-        'Ethers.js / Wagmi interaction patterns',
-        'Signature & transaction flow UX',
-        'Security & failure state handling'
+        'React Native Expo with Hermes engine for native speed',
+        'Notabene Web3 SDK integration for travel rules & wallets',
+        'Ethers.js / Wagmi transaction UX & failure resilience'
       ]
     },
     {
@@ -119,9 +149,9 @@ const Main = () => {
       icon: Rocket,
       summary: 'Frictionless pipelines & automated governance.',
       points: [
-        'CI gates (tests, lint, a11y, perf)',
-        'Preview environments & feature flags',
-        'Release notes & rollout safety'
+        'CI gates (GitHub Actions, Jenkins, GitLab CI)',
+        'Docker containerization & Kubernetes (K8s) readiness',
+        'Preview environments & feature flags'
       ]
     },
     {

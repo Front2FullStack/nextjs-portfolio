@@ -36,7 +36,7 @@ export function Footer() {
             },
             {
               label: "Resume",
-              href: "/Sr_Sofware_Engineer_FullStack_SushilParajuli.pdf",
+              href: "/Sushil-Parajuli-FullStack-latest.pdf",
             },
           ].map((item) => (
             <motion.li

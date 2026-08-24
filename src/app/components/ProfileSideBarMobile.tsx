@@ -75,12 +75,20 @@ const ProfileSidebarMobile = () => {
             Sushil Parajuli
           </motion.h1>
           <motion.p
-            className="text-xl md:2xl sm:text-2xl  font-bold text-purple-700 "
+            className="text-lg md:text-xl font-bold text-purple-700 dark:text-purple-400"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Senior Software Engineer (Full Stack)
+            Senior Full Stack Engineer
+          </motion.p>
+          <motion.p
+            className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mt-0.5"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+          >
+            Generative AI &bull; Distributed Systems
           </motion.p>
         </motion.div>
 
@@ -94,8 +102,9 @@ const ProfileSidebarMobile = () => {
             >
               <a
                 target="_blank"
-                href="/Sr_Sofware_Engineer_FullStack_SushilParajuli.pdf"
-                download="Sr_Sofware_Engineer_FullStack_SushilParajuli.pdf"
+                rel="noopener noreferrer"
+                href="/Sushil-Parajuli-FullStack-latest.pdf"
+                download="Sushil-Parajuli-FullStack-latest.pdf"
               >
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume
