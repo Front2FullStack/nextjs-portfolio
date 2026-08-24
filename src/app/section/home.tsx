@@ -1,7 +1,7 @@
 "use client";
 import MobileNav from '@/components/MobileNav';
 import { motion } from 'framer-motion';
-import { TestTube, Layers, Box, Accessibility, Settings2, Users, ShieldCheck, MonitorSmartphone, BarChart3, Component, GitBranch, Rocket, Gauge, Bot, Activity, Workflow, Smartphone } from 'lucide-react';
+import { TestTube, Box, Accessibility, Settings2, Users, ShieldCheck, MonitorSmartphone, BarChart3, Component, GitBranch, Rocket, Gauge, Bot, Activity, Workflow, Smartphone } from 'lucide-react';
 import CapabilityCard, { Capability } from '@/components/CapabilityCard';
 import SkillBadges from '@/components/SkillBadges';
 import ExperienceTimeline from '@/components/ExperienceTimeline';

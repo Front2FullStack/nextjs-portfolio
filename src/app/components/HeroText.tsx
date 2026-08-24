@@ -18,7 +18,7 @@ const HeroText = () => {
         animate="visible"
         transition={{ delay: 1.2 }}
       >
-        👋 I'm Sushil Parajuli
+        👋 I&apos;m Sushil Parajuli
       </motion.p>
 
       <div className="flex-col hidden md:flex c-space">

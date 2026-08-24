@@ -11,7 +11,7 @@ const skillCategories: SkillCategory[] = [
   {
     category: 'Frontend Tech Stack',
     items: [
-      'React.js', 'Next.js 14+', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3',
+      'React.js', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3',
       'Tailwind CSS', 'Vue.js', 'Nuxt.js', 'Redux Toolkit', 'Zustand', 'TanStack Query',
       'i18n (Arabic/English)', 'RTL', 'Gsap', 'Three.js'
     ]
