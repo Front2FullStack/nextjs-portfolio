@@ -10,7 +10,7 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
-import { Button } from "./button";
+import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 
 // Data sets (could be elevated to props later if needed)

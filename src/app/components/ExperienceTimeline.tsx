@@ -29,7 +29,7 @@ const experiences: ExperienceItem[] = [
       "Mentored 5+ engineers on clean architecture principles, TypeScript patterns, and AI-assisted development workflows using GitHub Copilot and Cursor; conducted code reviews in Agile sprint ceremonies.",
       "Led app-stack modernization to React Native Expo with Hermes engine, achieving native-grade performance for scalable mobile architecture.",
     ],
-    tech: "React, Next.js 14+, TypeScript, Node.js, FastAPI, Golang, Apache Kafka, WebSockets, TradingView, ECharts, Ag-Grid, Storybook, React Native (Expo/Hermes), GitHub Copilot, Cursor",
+    tech: "React, Next.js, TypeScript, Node.js, FastAPI, Golang, Apache Kafka, WebSockets, TradingView, ECharts, Ag-Grid, Storybook, React Native (Expo/Hermes), GitHub Copilot, Cursor",
   },
   {
     company: "M2.COM",
@@ -126,7 +126,6 @@ const bulletVariants = {
 const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({
   id = "experience-timeline",
   title = "Experience Timeline",
-  compact = false,
 }) => {
   return (
     <section id={id} className="scroll-mt-28">

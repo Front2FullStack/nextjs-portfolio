@@ -46,7 +46,7 @@ const AboutSummary: React.FC<AboutSummaryProps> = () => {
           <span className="font-semibold text-foreground">
             End-to-End Engineering Strengths:
           </span>{" "}
-          Node.js, Next.js 14+, TypeScript, Python (FastAPI), Golang, and Apache Kafka with real-time data visualization (TradingView, ECharts, AgGrid, WebSockets, SSE). Proven track record establishing reusable component libraries via Storybook, optimizing Core Web Vitals (LCP, CLS) through SSR/ISR, enforcing WCAG 2.1 AA accessibility, and hardening applications with OAuth2/OIDC, RBAC, and CSP/HSTS.
+          Node.js, Next.js, TypeScript, Python (FastAPI), Golang, and Apache Kafka with real-time data visualization (TradingView, ECharts, AgGrid, WebSockets, SSE). Proven track record establishing reusable component libraries via Storybook, optimizing Core Web Vitals (LCP, CLS) through SSR/ISR, enforcing WCAG 2.1 AA accessibility, and hardening applications with OAuth2/OIDC, RBAC, and CSP/HSTS.
         </p>
       </motion.blockquote>
     </div>
